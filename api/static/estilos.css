@@ -1,0 +1,25 @@
+ul {
+  list-style-type: none;
+  background-color: black;
+  color: white;
+}
+
+ul>li {
+  display: inline-block;
+  width: 30%;
+}
+
+a {
+  color: yellow;
+}
+
+a:visited {
+  color: white;
+}
+
+td {
+  width: 25rem;
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+}

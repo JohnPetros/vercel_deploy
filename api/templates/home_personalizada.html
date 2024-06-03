@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block contents %}
+
+<p>
+  Olá {{ usuario }}! Esse template demonstra a criação de um conteúdo a partir
+  da herança de um template básico.
+</p>
+
+<p>
+  Olá, sou o {{ user["name"] }} e sou estudante do curso de {{ user["course"] }}
+</p>
+
+<table border="1">
+
+  {% for row in table %}
+  <tr>
+    {% for column in row %}
+    <td>
+      {{ column }}
+    </td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
